@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#img_logo {
+    height: 70px;
+    width: 70px;
+}
+
+#img_logo-name {
+    color: #FF9F0D;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.container-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .nav-link {
+    font-weight: 700;
+} */
+
+#nav-item-active {
+    font-size: 1.3em;
+    color: #FF9F0D;
+    font-weight: 700;
+    border-bottom: 3px solid #FF9F0D;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+#cart {
+    font-size: 1.5em;
+    color: black;
+}
+
+#cart i {
+    color: black;
+    position: relative;
+}
+
+#cart-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: black;
+    position: absolute;
+    bottom: 60%;
+    left: 90%;
+    background-color: #e68d08;
+    box-sizing: border-box;
+    padding-top: 13px;
+}
+
+#cart-number p {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+}
+
+/* sart Banner */
+.banner {
+    height: 98vh;
+    width: 100%;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: 70px;
+    background-image: url('img/banner02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    filter: brightness(0.8);
+}
+
+.banner_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_content p {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.banner .btn {
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+
+/* start article */
+article {
+    height: 80vh;
+    width: 100%;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-container h1 {
+    text-transform: uppercase;
+}
+
+.article-container p {
+    height: 120px;
+    width: 500px;
+    text-align: center;
+}
+
+.article__img {
+    margin-top: 80px;
+    height: 300px;
+    width: 300px;
+    background-image: url("./img/article.png");
+    background-position: bottom;
+    background-size: cover;
+    transition: 2s;
+}
+
+.article-container:hover .article__img {
+    scale: 1.5;
+}
+
+/* start Category */
+.category-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-category {
+    display: block;
+}
+
+.list-category img {
+    scale: 1;
+}
+
+/* product */
+/* start best seller */
+.best-seller {
+    margin-top: 160px;
+    margin-bottom: 200px;
+}
+
+.best-seller h1 {
+    margin-top: 10px;
+}
+
+.best-seller .price {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.btn-order {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* strart product detail */
+.product-detail {
+    margin-top: 120px;
+    margin-bottom: 200px;
+}
+
+.product-detail h2 {
+    text-transform: uppercase;
+}
+
+.product-detail-content {
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-detail-left {
+    height: 100%;
+    width: 50%;
+}
+
+.product-detail-right {
+    height: 100%;
+    width: 50%;
+}
+
+.product-detail-right .btn-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    width: 100%;
+}
+
+.product-detail-right h3 {
+    font-weight: 400;
+}
+
+.product-detail-right h1 {
+    font-weight: 600;
+}
+
+.product-detail-right i {
+    color: rgb(235, 193, 5);
+}
+
+
+.product-detail-right span {
+    color: #e68d08;
+}
+
+.product-detail-right .price {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#img01 {
+    height: 80%;
+    background-image: url("img/best-1.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+/* footer */
+
+footer {
+    margin-top: 150px;
+    position: relative;
+    margin-bottom: -20px;
+}
+
+.footer-top {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_logo {
+    height: 50%;
+    width: 500px;
+}
+
+.footer_logo img {
+    height: 100%;
+}
+
+.footer_logo span {
+    color: #e68d08;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+#img_sprin {
+    position: absolute;
+    top: -30%;
+    left: 38%;
+    height: 400px;
+    width: 400px;
+    background-image: url("img/footer.jpg");
+    background-position: bottom;
+    background-size: cover;
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.footer-center {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+}
+
+.footer-center ul {
+    width: 25%;
+    font-size: 1.4em;
+}
+
+.footer-center ul li p {
+    font-size: 0.9em;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Áp dụng animation vào phần tử */
